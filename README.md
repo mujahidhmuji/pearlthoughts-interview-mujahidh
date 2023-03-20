@@ -19,3 +19,7 @@ env_name	Name of environment	string	"Development"	no
 Outputs
 Name	Description
 tf-state-bucket-name	n/a
+
+step1 : terraform init , terraform plan, terraform apply for both files PIPE and STATE.
+Step2 : Since we have not specified account id in buildspec.yml, create a paramater store secret and store the account id.
+step3 :trigger code commit and the pipeline will work automatically
